@@ -2,7 +2,7 @@
 def printboard(): 
     for row in board:
         print(" | ".join(row))
-        print("-"*(cell_size * size+(size-1) * 3))
+        print("-"*(cell_size * size+(size-1)))
 
 
 
@@ -82,8 +82,7 @@ while not over:
         printboard()
         print("It's a tie!")
         over=True
-
-
-
     cp='O' if cp=='X' else 'X'
+
+
 print("Thanks for playing!")
